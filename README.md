@@ -1,7 +1,7 @@
 # WELCOME TO PROJECT19
 Realtor Profile under construction
 
-Common Commands
+Common GIT Commands
 clone : git clone https://github.com/prisc/project19.git
 status : git status 
 stash current changes : git stash
