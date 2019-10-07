@@ -11,6 +11,18 @@ get stash list : git stash list
 
 CHEAT SHEET : http://ndpsoftware.com/git-cheatsheet.html
 
-
-CSS : w3 CSS templates coffee house
+CSS : w3 CSS templates
 IMAGES : pexels.com
+
+start NODE server : node app.js
+Ctrl + c to stop node server
+
+To start the app on node:
+1. npm start on terminal
+2. Access http://localhost:3000/ on local web browser
+
+
+npm init : creates package.json
+npm install node : install node modules
+npm install express : express server
+npm install --save-dev nodemon

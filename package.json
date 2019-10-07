@@ -1,0 +1,27 @@
+{
+  "name": "project19",
+  "version": "1.0.0",
+  "description": "Realtor Profile",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prisc/project19.git"
+  },
+  "author": "PK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prisc/project19/issues"
+  },
+  "homepage": "https://github.com/prisc/project19#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^12.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}

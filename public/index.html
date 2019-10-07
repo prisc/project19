@@ -3,9 +3,9 @@
 <title>RELATOR HOME</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link rel="shortcut icon" href="img/favicon.ico">
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href="img/favicon.ico">
 <style>
 body, html {
   height: 100%;
@@ -15,7 +15,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("img/apartment-room.jpg");
+  background-image: url("/img/apartment-room.jpg");
   min-height: 75%;
 }
 
@@ -24,7 +24,7 @@ body, html {
 }
 </style>
 <body>
-
+<script src="/js/main.js"></script>
 <!-- Links (sit on top) -->
 
 <div class="w3-top">
@@ -47,34 +47,35 @@ body, html {
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
 </header>
+<div>
 <div class="w3-container" id="properties">
     <h1><b>PROPERTIES</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>HOME</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>CONDOMINIUMS</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>OTHERS</button>
     </div>
   </div>
 <!-- First Photo Grid-->
-<div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="img/ceiling-chairs-clean.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom"   onclick="viewDetails(1)">
+      <img src="/img/ceiling-chairs-clean.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="img/cabinet-contemporary-counter.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/img/cabinet-contemporary-counter.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="img/bookcase-chairs-clean.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="img/bookcase-chairs-clean.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -85,28 +86,28 @@ body, html {
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="img/architecture-chair-color.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="img/architecture-chair-color.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="img/architecture-beautiful-home-building.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="img/architecture-beautiful-home-building.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="img/apartment-cabinet-chairs.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="img/apartment-cabinet-chairs.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
   </div>
-
+</div>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -127,7 +128,7 @@ body, html {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.
       </p>
-    </div>
+  </div>
 
      <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
@@ -139,7 +140,7 @@ body, html {
         </div>
         <div class="w3-third w3-teal">
           <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-          <p>Chicago, US</p>
+          <p>Toronto, CAN</p>
         </div>
         <div class="w3-third w3-dark-grey">
           <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
@@ -162,7 +163,7 @@ body, html {
         </div>
         <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
       </form>
-    </div>
+  </div>
 
 <!-- End page content -->
 </div>
@@ -171,24 +172,6 @@ body, html {
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
 
 </body>
 </html>
