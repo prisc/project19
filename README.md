@@ -19,7 +19,7 @@ Ctrl + c to stop node server
 
 To start the app on node:
 1. npm start on terminal
-2. Access http://localhost:3000/ on local web browser
+2. Access http://localhost:3000/realtor-profile on local web browser
 
 
 npm init : creates package.json
