@@ -3,5 +3,5 @@
   // Click to view Detailed Property
  
   function viewDetails(n) {
-    window.open('property-detail.html');
+    window.open('property-detail');
   }
