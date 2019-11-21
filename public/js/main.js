@@ -5,3 +5,4 @@
   function viewDetails(n) {
     window.open('property-detail');
   }
+  

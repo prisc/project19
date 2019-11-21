@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="/css/main.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link href="img/favicon.ico">
 <style>
 body, html {
   height: 100%;
@@ -15,7 +14,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("/img/apartment-room.jpg");
+  background-image: url("/img/back-ground-main-pic.jpg");
   min-height: 100%;
 }
 
@@ -54,21 +53,21 @@ body, html {
 <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container properties-list w3-margin-bottom"   onclick="viewDetails(1)">
-      <img src="/img/ceiling-chairs-clean.jpg" alt="Norway"  class="w3-hover-opacity">
+      <img src="/img/ceiling-chairs-clean.jpg" alt="property-for-sale"  class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container properties-list w3-margin-bottom">
-      <img src="/img/cabinet-contemporary-counter.jpg" alt="Norway"   class="w3-hover-opacity" onclick="viewDetails(1)">
+      <img src="/img/cabinet-contemporary-counter.jpg" alt="property-for-sale"   class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container properties-list">
-      <img src="img/bookcase-chairs-clean.jpg" alt="Norway"   class="w3-hover-opacity" onclick="viewDetails(1)">
+      <img src="img/bookcase-chairs-clean.jpg" alt="property-for-sale"   class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -79,21 +78,21 @@ body, html {
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom properties-list">
-      <img src="img/architecture-chair-color.jpg" alt="Norway"   class="w3-hover-opacity" onclick="viewDetails(1)">
+      <img src="img/architecture-chair-color.jpg" alt="property-for-sale"   class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom properties-list">
-      <img src="img/architecture-beautiful-home-building.jpg" alt="Norway"   class="w3-hover-opacity" onclick="viewDetails(1)">
+      <img src="img/architecture-beautiful-home-building.jpg" alt="property-for-sale"  class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container properties-list">
-      <img src="img/apartment-cabinet-chairs.jpg" alt="Norway"   class="w3-hover-opacity" onclick="viewDetails(1)">
+      <img src="img/apartment-cabinet-chairs.jpg" alt="property-for-sale"  class="w3-hover-opacity" onclick="viewDetails(1)">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -141,18 +140,18 @@ body, html {
         </div>
       </div>
       <hr class="w3-opacity">
-      <form action="/action_page.php" target="_blank">
+      <form action="/send-mail" target="_blank" method="POST">
         <div class="w3-section">
           <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
+          <input class="w3-input w3-border" type="text" id="email-name" name="Name" required>
         </div>
         <div class="w3-section">
           <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
+          <input class="w3-input w3-border" type="text" id="email-id" name="Email" required>
         </div>
         <div class="w3-section">
           <label>Message</label>
-          <textarea class="w3-input w3-border" type="text" name="Message" required  maxlength="500"></textarea>
+          <textarea class="w3-input w3-border" type="text" id="email-msg" name="Message" required  maxlength="500"></textarea>
         </div>
         <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
       </form>
